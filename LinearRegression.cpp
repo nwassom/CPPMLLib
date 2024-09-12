@@ -4,6 +4,7 @@
 
 #include <numeric>
 #include <cmath>
+#include <stdexcept>
 
 
 /*

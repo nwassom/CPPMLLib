@@ -53,25 +53,27 @@ double convertInchToFeet(double inches)
 int main()
 {
 	std::string filename;
-	double x_val;
+	double x_val = 72.5;
 
 	std::vector<double> x;
 	std::vector<double> y;
 
-
+/*
 	std::cout << "Enter filename for data: ";
 	std::cin >> filename;
-
-	readCSV(filename, x, y);
+*/
+	readCSV("data.csv", x, y);
 
 	LinearRegression model(x,y);
 
 	model.calculateCoefficients();
 
+/*
 	std::cout << "Enter data to be predicted among: ";
 	std::cin >> x_val;
+*/
 	double y_predict = model.predict(x_val);
 
-	std::cout << "Predicted y for x = " << convertInchToFeet(x_val) << ": " << convertInchToFeet(y_predict) << std::endl;
+	std::cout << "Predicted y for x = " << x_val << ": " << y_predict << std::endl;
 	
 }
