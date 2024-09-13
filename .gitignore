@@ -1,0 +1,22 @@
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore virtual environment directory
+venv/
+.env/
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore C++ build files
+*.o
+*.out
+*.exe
+
+# Ignore log files
+*.log
+
+# Ignore environment-specific files
+*.env
